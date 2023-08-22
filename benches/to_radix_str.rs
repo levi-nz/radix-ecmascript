@@ -40,7 +40,7 @@
  */
 
 use criterion::{black_box, criterion_group, criterion_main, Criterion, BenchmarkId};
-use radix::{MAX_BASE, MIN_BASE, ToRadixStr};
+use radix_ecmascript::{MAX_BASE, MIN_BASE, ToRadixStr};
 
 fn to_radix_str_benchmarks(c: &mut Criterion) {
     const INPUT: f64 = 0.05217266072382676;
