@@ -39,7 +39,7 @@
  * This license can also be found at: https://github.com/v8/v8/blob/f83601408c3207211bc8eb82a8802b01fd82c775/LICENSE
  */
 
-//! `radix-rs` adds a function, `to_radix_str`, to floating-point types (`f32` and `f64`)
+//! `radix-ecmascript` adds a function, `to_radix_str`, to floating-point types (`f32` and `f64`)
 //! to allow callers to obtain their radix string representation, just like in JavaScript,
 //! in pure Rust. This library has no dependencies and is very lightweight.
 //!
@@ -52,7 +52,7 @@
 //!
 //! Example:
 //! ```rust
-//! use radix::{InvalidBaseError, ToRadixStr};
+//! use radix_ecmascript::{InvalidBaseError, ToRadixStr};
 //!
 //! fn main() {
 //!     println!("{}", (0.123).to_radix_str(16).unwrap());

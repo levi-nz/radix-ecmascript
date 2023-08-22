@@ -1,14 +1,13 @@
 [package]
-name = "radix"
+name = "radix-ecmascript"
 version = "0.1.0"
 edition = "2021"
-authors = "Levi-Michael Taylor"
-description = "Convert floating-point types to radix string representation, just like in JavaScript"
-license = "MIT"
+authors = ["Levi-Michael Taylor"]
+description = "Convert floating-point types to string representation as defined in ECMAScript Language Specification Section 9.8.1"
 license-file = "LICENSE.txt"
 keywords = ["radix", "ecmascript", "javascript"]
-homepage = "https://github.com/levi-nz/radix-rs"
-repository = "https://github.com/levi-nz/radix-rs"
+homepage = "https://github.com/levi-nz/radix-ecmascript"
+repository = "https://github.com/levi-nz/radix-ecmascript"
 readme = "README.md"
 
 [dev-dependencies]
