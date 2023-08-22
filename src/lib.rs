@@ -107,7 +107,7 @@ impl ToRadixStr for f64 {
     fn to_radix_str(self, base: Base) -> Result<String, InvalidBaseError> {
         use crate::f64_util::{exponent, next_float};
 
-        // Validate base at runtime
+        // Validate base
         if !(MIN_BASE..=MAX_BASE).contains(&base) {
             return Err(InvalidBaseError(base));
         }
