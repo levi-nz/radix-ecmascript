@@ -2,6 +2,14 @@
 name = "radix"
 version = "0.1.0"
 edition = "2021"
+authors = "Levi-Michael Taylor"
+description = "Convert floating-point types to radix string representation, just like in JavaScript"
+license = "MIT"
+license-file = "LICENSE.txt"
+keywords = ["radix", "ecmascript", "javascript"]
+homepage = "https://github.com/levi-nz/radix-rs"
+repository = "https://github.com/levi-nz/radix-rs"
+readme = "README.md"
 
 [dev-dependencies]
 criterion = { version = "0.5.1", features = ["html_reports"] }
