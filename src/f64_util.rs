@@ -44,17 +44,11 @@
 //! [V8 Source Code](https://github.com/v8/v8/blob/f83601408c3207211bc8eb82a8802b01fd82c775/src/numbers/double.h)
 
 const K_SIGN_MASK: u64 = 0x8000_0000_0000_0000;
-
 const K_EXPONENT_MASK: u64 = 0x7FF0_0000_0000_0000;
-
 const K_SIGNIFICAND_MASK: u64 = 0x000F_FFFF_FFFF_FFFF;
-
 const K_HIDDEN_BIT: u64 = 0x0010_0000_0000_0000;
-
 const K_INFINITY: u64 = 0x7FF0_0000_0000_0000;
-
 const K_PHYSICAL_SIGNIFICAND_SIZE: i32 = 52; // Excludes hidden bit.
-
 const K_EXPONENT_BIAS: i32 = 0x3FF + K_PHYSICAL_SIGNIFICAND_SIZE;
 const K_DENORMAL_EXPONENT: i32 = -K_EXPONENT_BIAS + 1;
 
