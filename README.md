@@ -4,6 +4,9 @@ just like in ECMAScript (`(0.5).toString(16)`, `(0.5).toString(36)` etc.).
 
 This library implements ECMAScript Language Specification Section 9.8.1 "ToString Applied to the Number Type".
 
+## Add as a dependency
+`cargo add radix-ecmascript`
+
 ## Example
 ```rust
 use radix_ecmascript::ToRadixStr;
