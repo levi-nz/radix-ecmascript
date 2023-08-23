@@ -6,7 +6,7 @@ This library implements ECMAScript Language Specification Section 9.8.1 "ToStrin
 
 ## Example
 ```rust
-use radix_ecmascript::{InvalidBaseError, ToRadixStr};
+use radix_ecmascript::ToRadixStr;
 
 fn main() {
     println!("{}", (0.123).to_radix_str(16).unwrap());

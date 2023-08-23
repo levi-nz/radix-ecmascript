@@ -52,11 +52,9 @@
 //!
 //! Example:
 //! ```rust
-//! use radix_ecmascript::{InvalidBaseError, ToRadixStr};
+//! use radix_ecmascript::ToRadixStr;
 //!
-//! fn main() {
-//!     println!("{}", (0.123).to_radix_str(16).unwrap());
-//! }
+//! println!("{}", (0.123).to_radix_str(16).unwrap());
 //! ```
 //! This code prints `0.1f7ced916872b`, which can also be achieved by running
 //! `(0.123).toString(16)` in JavaScript.
