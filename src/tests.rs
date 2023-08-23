@@ -43,7 +43,7 @@
 use crate::*;
 
 #[test]
-fn test_to_radix_str() -> Result<(), InvalidBaseError> {
+fn test_to_radix_str() {
     let x = 0.05217266072382676;
 
     const EXPECTED: [&str; 35] = [
@@ -85,10 +85,8 @@ fn test_to_radix_str() -> Result<(), InvalidBaseError> {
     ];
 
     for base in MIN_BASE..=MAX_BASE {
-        assert_eq!(x.to_radix_str(base)?, EXPECTED[base as usize - 2]);
+        assert_eq!(x.to_radix_str(base).unwrap(), EXPECTED[base as usize - 2]);
     }
-
-    Ok(())
 }
 
 #[test]
